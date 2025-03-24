@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <style>
+        /* 🌙 Full-Screen Background */
+        .welcome-container {
+            position: relative;
+            height: 100vh;
+            background: url('background.jpg') no-repeat center center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center; /* Center content vertically and horizontally */
+            text-align: center;
+            color: white;
+            background-color: #000; /* Black background */
+        }
+
+        /* 🔹 Dark Overlay */
+        .welcome-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6); /* Slightly darker overlay */
+        }
+
+        /* 🔥 Center Everything */
+        .welcome-content {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center; /* Center content vertically */
+            gap: 30px; /* Space between elements */
+        }
+
+        /* ✨ Stylish Heading */
+        .welcome-content h1 {
+            font-size: 3.5rem;
+            font-weight: bold;
+            margin: 0;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Text shadow for effect */
+        }
+
+        /* 📝 Subheading */
+        .welcome-content p {
+            font-size: 1.5rem;
+            opacity: 0.8;
+            margin: 0;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Text shadow for effect */
+        }
+
+        /* 🌟 Centered Profile Image - Now Extra Large */
+        .profile-img {
+            width: 350px; /* Adjusted size for better responsiveness */
+            height: 350px; /* Adjusted size */
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0 0 30px rgba(0, 185, 212, 0.8), 0 0 40px rgba(0, 185, 212, 0.5); /* Teal glowing effect */
+            margin-top: 30px;
+            transition: box-shadow 0.3s ease-in-out;
+        }
+
+        /* 🟦 Glowing Button with Black Theme */
+        .btn-start {
+            font-size: 1.2rem;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 50px;
+            background: #00bcd4; /* Teal background */
+            color: white;
+            box-shadow: 0 0 30px rgba(0, 185, 212, 0.8), 0 0 40px rgba(0, 185, 212, 0.5); /* Teal glowing effect */
+            cursor: pointer;
+            transition: 0.3s ease-in-out;
+            margin-top: 20px; /* Increased space between Profile Image and Button */
+        }
+
+        /* Button hover effect */
+        .btn-start:hover {
+            background: #008c9e; /* Darker teal for hover */
+            box-shadow: 0 0 40px rgba(0, 185, 212, 1), 0 0 50px rgba(0, 185, 212, 0.6); /* Stronger teal glowing effect on hover */
+        }
+
+        /* Profile Image hover effect */
+        .profile-img:hover {
+            box-shadow: 0 0 50px rgba(0, 185, 212, 1), 0 0 60px rgba(0, 185, 212, 0.5); /* Stronger teal glowing effect */
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="welcome-container">
+        <div class="welcome-overlay"></div>
+
+        <!-- Centered Content -->
+        <div class="welcome-content">
+            <!-- Welcome heading at the top center -->
+            <h1>Welcome</h1>
+            
+            <!-- Subheading just below the Welcome text -->
+            <p>Your Profile, Your Identity.</p>
+            
+            <!-- Extra Large Profile Image -->
+            <img src="https://instaresume.io/section_1.webp" alt="Profile Image" class="profile-img">
+            
+            <!-- Button below the image -->
+            <a href="main.html"><button class="btn-start">Get Started</button></a>
+        </div>
+    </div>
+
+</body>
+</html>

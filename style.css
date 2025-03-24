@@ -1,0 +1,10 @@
+
+/* 🌟 Centered Profile Image - Now Extra Large */
+.profile-img {
+    width: 500px; /* Extra Large size */
+    height: 500px; /* Extra Large size */
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+    margin-top: 130px; /* Space between Welcome text and Profile Image */
+}
